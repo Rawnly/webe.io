@@ -38,6 +38,15 @@
 /* Functions*/
 /* Fonts*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800");
+body::-webkit-scrollbar {
+  display: none; }
+
+html::-webkit-scrollbar {
+  display: none; }
+
+body {
+  font-size: 14px; }
+
 #page1 {
   width: 100vw;
   max-width: none;
@@ -47,7 +56,8 @@
   margin: 0 auto;
   padding: 0;
   color: #fff;
-  background: url(res/wp.jpg) top left no-repeat;
+  background-position: top left;
+  background-repeat: no-repeat;
   background-size: cover; }
   #page1 .title_center {
     display: table-cell;
@@ -59,47 +69,31 @@
     color: #fff; }
     #page1 .title_center mark {
       color: white;
-      background: rgba(0, 0, 0, 0.5); }
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px; }
     @media screen and (max-width: 800px) and (min-resolution: 96dpi) {
       #page1 .title_center {
         font-size: 6em; } }
 
 nav {
-  position: fixed; }
+  font-family: "Raleway";
+  font-weight: normal;
+  color: #fff;
+  position: fixed;
+  height: 50px; }
   nav ul {
     display: table;
     width: 100vw;
     height: 50px;
     min-width: 100vw;
     background: rgba(0, 0, 0, 0.3);
-    position: fixed;
+    color: white;
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow: hidden; }
-    nav ul #logo {
-      float: left;
-      position: absolute; }
-      nav ul #logo a {
-        cursor: pointer !important;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 20px 16px;
-        text-decoration: none; }
-        nav ul #logo a:hover {
-          text-decoration: none;
-          color: #e6e6e6; }
-        nav ul #logo a:active {
-          text-decoration: none;
-          color: #d9d9d9; }
-        nav ul #logo a:focus {
-          text-decoration: none; }
-        nav ul #logo a:link {
-          text-decoration: none; }
-    nav ul li:not(#logo) {
+    padding: 0; }
+    nav ul li {
       float: right; }
-      nav ul li:not(#logo) a {
+      nav ul li a {
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
         cursor: pointer !important;
@@ -108,20 +102,32 @@ nav {
         text-align: center;
         padding: 20px 16px;
         text-decoration: none; }
-        nav ul li:not(#logo) a:hover {
+        nav ul li a:hover {
           text-decoration: none;
           color: #e6e6e6; }
-        nav ul li:not(#logo) a:active {
+        nav ul li a:active {
           text-decoration: none;
           color: #d9d9d9; }
-        nav ul li:not(#logo) a:focus {
+        nav ul li a:focus {
           text-decoration: none; }
-        nav ul li:not(#logo) a:link {
+        nav ul li a:link {
           text-decoration: none; }
-        nav ul li:not(#logo) a:hover {
+        nav ul li a:hover {
           text-decoration: none;
           background: white;
           color: black; }
+      nav ul li ul {
+        background: #de4f4f;
+        color: #000;
+        position: absolute;
+        left: 0px;
+        top: 60px;
+        width: 150px;
+        height: 400px; }
+      nav ul li li {
+        float: left;
+        padding: 5px;
+        display: block; }
 
 #git {
   position: absolute;
@@ -150,21 +156,5 @@ nav {
     #git .icon_social:hover {
       color: #fff; }
 
-.madewithlove {
-  width: 100vw;
-  min-width: 100vw;
-  height: 5vh;
-  text-align: center;
-  display: table;
-  background: white; }
-  .madewithlove .subtitle {
-    color: inherit;
-    font-size: 4em;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle; }
-  .madewithlove .madeText {
-    color: black;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle; }
+.socicon {
+  font-size: 0.85em; }

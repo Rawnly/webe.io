@@ -1,43 +1,62 @@
 @import 'config'
 
+body
+  font-size: 14px
+  
 #page1
   @include page(red, false)
   color: contrast($cyan)
-  background: url(res/wp.jpg) top left no-repeat
+  background-position: top left
+  background-repeat: no-repeat
   background-size: cover
 
 nav
+  @include fontSettings('Raleway')
   position: fixed
+  height: 50px
+
   ul
     display: table
     width: 100vw
     height: 50px
     min-width: 100vw
+
     background: rgba(0, 0, 0, .3)
-    position: fixed
+    color: rgb(255, 255, 255)
 
     list-style-type: none
+
     margin: 0
     padding: 0
-    overflow: hidden
 
-    #logo
-      float: left
-      position: absolute
-      a
-        @include link(white)
-
-    li:not(#logo)
+    li
       float: right
 
       a
         @include transition(.3s)
         @include link(white)
+
         &:hover
           text-decoration: none
           background: white
           color: black
+      ul
+        background: rgb(222, 79, 79)
+        color: #000
 
+        position: absolute
+        left: 0px
+        top: 60px
+        width: 150px
+        height: 400px
+
+      li
+        float: left
+        padding: 5px
+        display: block
+
+// ul.sub-menu
+//   display: none
 
 #git
   position: absolute
@@ -56,12 +75,5 @@ nav
     &:hover
       color: #fff
 
-.madewithlove
-  @include handle(5vh)
-  background: white
-
-  .madeText
-    color: black
-    display: table-cell
-    text-align: center
-    vertical-align: middle
+.socicon
+  font-size: 0.85em

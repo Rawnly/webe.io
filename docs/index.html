@@ -33,7 +33,7 @@
     <script src="js/index.js" charset="utf-8"></script>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
     <!-- // IONICONS -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -42,47 +42,38 @@
     <link rel="stylesheet" href="https://rawgit.com/Rawnly/Chili.css/master/dist/chili.css">
     <!-- Personal Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+
 </head>
 
 <body>
     <nav>
-        <ul>
+        <ul class="menu">
             <li><a href="https://github.com/Rawnly"> GitHub </a></li>
             <li><a href="contact.html">Get in touch</a></li>
-            <li><a href="#">About</a></li>
+            <li class="dropdown">
+              <a href="#"> About </a>
+            </li>
         </ul>
     </nav>
 
     <div id="page1">
-        <div class="title_center">
-            <mark> Webe.io </mark>
-        </div>
+      <div class="title_center">
+          <mark> Webe.io </mark>
+      </div>
     </div>
 
     <footer id="git">
         <a href="https://twitter.com/RawnlyDev" class="icon_social">
-            <span class="ion-social-twitter"></span>
+            <span class="socicon ion-social-twitter"></span>
         </a>
         <a href="https://github.com/Rawnly" class="icon_social">
-            <span class="ion-social-github"></span>
+            <span class="socicon ion-social-github"></span>
         </a>
         <a href="https://codepen.io/Rawnly/" class="icon_social">
-            <span class="ion-social-codepen"></span>
+            <span class="socicon ion-social-codepen"></span>
         </a>
     </footer>
-
-    <div class="madewithlove">
-        <div class="madeText">
-            Made with
-            <span style="color: red" class="glyphicon glyphicon-heart"></span> by
-            <a class="animated dark" href="https:github.com/Rawnly">
-                <strong>
-            Rawnly
-          </strong>
-            </a>
-        </div>
-    </div>
-
 </body>
 
 </html>

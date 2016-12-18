@@ -38,6 +38,12 @@
 /* Functions*/
 /* Fonts*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800");
+body::-webkit-scrollbar {
+  display: none; }
+
+html::-webkit-scrollbar {
+  display: none; }
+
 html, body {
   background: #03090f;
   outline: none; }
@@ -63,7 +69,8 @@ html, body {
     color: #fff; }
     #p1 .title_center mark {
       color: white;
-      background: rgba(0, 0, 0, 0.5); }
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px; }
     @media screen and (max-width: 800px) and (min-resolution: 96dpi) {
       #p1 .title_center {
         font-size: 6em; } }
@@ -190,3 +197,22 @@ input[type="text"] {
     text-decoration: none; }
     .back a:hover, .back a:link, .back a:active {
       text-decoration: none; }
+
+.madewithlove {
+  width: 100vw;
+  min-width: 100vw;
+  height: 5vh;
+  text-align: center;
+  display: table;
+  background: #06111c; }
+  .madewithlove .subtitle {
+    color: inherit;
+    font-size: 4em;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
+  .madewithlove .madeText {
+    color: #fff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
